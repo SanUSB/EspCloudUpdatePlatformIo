@@ -1,19 +1,12 @@
 # EspCloudUpdatePlatformIo [![N|Solid](http://sanusb.blogspot.com.br/favicon.ico)](http://sanusb.org/)
 
-This project for all shows an ESP32 and ESP266 microcontrollers Update Environment for Internet programming with same generic sketch using the website  [sanusb.org/espupdate](http://sanusb.org/espupdate). In this project, the free version of Firebase (Google JSON objects Database) was implemented to generate the cloud update trigger for .bin files. 
+This project for all shows an ESP32 and ESP266 microcontrollers Update Environment for Internet programming with same generic sketch using the website  [sanusb.org/espupdate](http://sanusb.org/espupdate). In this project, the free version of Firebase (Google JSON objects Database) was implemented to generate the cloud update trigger for .bin files. To use this tool, download and and use this project with PlatformIO and VScode.
 
 The update (OTA) transmits the compiled binary *.bin* files via Internet. To generate a .bin file from your sketch, go to Sketch menu of the Arduino IDE > Export compiled Binary. To perform this cloud firmware update, the users need to write in the sketch only the Wifi ssid, the password and the same name as the profile entered on the site and when uploading the .bin to site, remote firmware update of ESP microcontrollers via the Internet takes place. The user profile name entered on the website [sanusb.org/espupdate](http://sanusb.org/espupdate) may be alphanumeric (for example: sandro190575 or sandrojuca).
 
 It is possible to test this transmission application via the Internet, accessing the site http://sanusb.org/espupdate/ through the laboratory or residence network and the ESP32/ESP8266 microcontroller anchored to the smartphone connected to the 4G mobile network, or vice versa.
 
- To install the ESP32 and ESP8266 boards in Arduino IDE, follow these next instructions:
- In your Arduino IDE, go to File> Preferences. Insert into the "Additional Board Manager URLs":
- * https://dl.espressif.com/dl/package_esp32_index.json, http://arduino.esp8266.com/stable/package_esp8266com_index.json
- 
- Open the Boards Manager: Go to Tools > Board > Boards Manager:
- Search for ESP32 and press install button for the "ESP32 by Espressif Systems". Also search for ESP8266 and press install button for the "ESP8266 by ESP8266 Community".
- 
- The dependencies of the EspCloudUpdatePlatformIo tool are the Firebase libraries. For ESP8266:
+ The dependencies of the EspCloudUpdatePlatformIo tool in the Arduino IDE libraries folder are the Firebase libraries. For ESP8266:
  
  * https://github.com/mobizt/Firebase-ESP8266
   
